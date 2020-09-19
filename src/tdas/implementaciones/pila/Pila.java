@@ -1,6 +1,5 @@
 package tdas.implementaciones.pila;
 
-import algoritmos.Copia;
 import tdas.interfaces.PilaTDA;
 
 public class Pila implements PilaTDA {
