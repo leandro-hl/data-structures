@@ -1,2 +1,2 @@
 # DataStructures
-Data structures and algorithms using them for Programming II lecture at UADE
+Data structures and algorithms that use them. For Programming II lecture at UADE
