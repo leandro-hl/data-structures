@@ -13,12 +13,7 @@ public class ColaPrioridadAscendentePrimeroFinal implements ColaPrioridadTDA {
     }
 
     @Override
-    public void acolar(int x) {
-        acolar(x, 1);
-    }
-
-    @Override
-    public void acolar(int x, int prioridad) {
+    public void acolarPrioridad(int x, int prioridad) {
         int ultimo = poner - 1;
 
         while (ultimo >= 0 && prioridad < vector[ultimo].prioridad) {
@@ -50,11 +45,14 @@ public class ColaPrioridadAscendentePrimeroFinal implements ColaPrioridadTDA {
     }
 
     @Override
+    public int prioridad() {
+        return vector[poner].prioridad;
+    }
+
     public void imprimirValores() {
 
     }
 
-    @Override
     public void imprimirComparativa(ColaTDA comparar) {
 
     }
