@@ -8,7 +8,7 @@ public interface ConjuntoTDA {
 
     void sacar(int x);
 
-    int elegir();
+    int obtener();
 
     boolean conjuntoVacio();
 

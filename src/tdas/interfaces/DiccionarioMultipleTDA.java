@@ -1,7 +1,7 @@
 package tdas.interfaces;
 
 public interface DiccionarioMultipleTDA {
-    void inicializarDiccionario();
+    void inicializarDiccionarioMultiple();
 
     void agregar(int clave, int valor);
 
