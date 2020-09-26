@@ -19,7 +19,7 @@ public class DiccionarioSimple implements DiccionarioSimpleTDA {
     private int cantidad;
 
     @Override
-    public void inicializarDiccionario() {
+    public void inicializarDiccionarioSimple() {
         this.elementos = new Elemento[100];
         this.cantidad = 0;
     }

@@ -45,7 +45,7 @@ public class ConjuntoLetrasMinusculas implements ConjuntoCharTDA {
     }
 
     @Override
-    public char elegir() {
+    public char obtener() {
         int ascii = random.nextInt(cantidadElementos) + cotaInferior;
 
         while (cantidadElementos > 0 && !vector[ascii]){

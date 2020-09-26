@@ -42,7 +42,7 @@ public class Conjunto implements ConjuntoTDA {
     }
 
     @Override
-    public int elegir() {
+    public int obtener() {
         return vector[random.nextInt(cantidadElementos)];
     }
 

@@ -5,7 +5,7 @@ public interface ConjuntoCharTDA {
 
     void sacar(char x);
 
-    char elegir();
+    char obtener();
 
     boolean conjuntoVacio();
 

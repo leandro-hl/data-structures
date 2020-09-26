@@ -22,7 +22,7 @@ public class DiccionarioMultiple implements DiccionarioMultipleTDA {
     private int cantidadClaves;
 
     @Override
-    public void inicializarDiccionario() {
+    public void inicializarDiccionarioMultiple() {
         this.claves = new ClaveMultiple[100];
         this.cantidadClaves = 0;
     }
