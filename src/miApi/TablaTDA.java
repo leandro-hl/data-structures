@@ -6,8 +6,8 @@ public interface TablaTDA {
 	 */
 	void inicializarTabla();
 	/**
-	 * Esta operación agrega un elemento nuevo a la tabla, donde el código corresponde a 
-	 * la cantidad de elementos de la tabla antes de ingresar un nuevo nombre. Los códigos serán únicos y consecutivos.
+	 * Esta operaciï¿½n agrega un elemento nuevo a la tabla, donde el cï¿½digo corresponde a 
+	 * la cantidad de elementos de la tabla antes de ingresar un nuevo nombre. Los cï¿½digos serï¿½n ï¿½nicos y consecutivos.
 	 * @precond El nombre no debe existir previamente en la tabla. 
 	 * @precond La tabla debe estar inicializada.
 	 * @param nombre
@@ -15,7 +15,7 @@ public interface TablaTDA {
     void agregar(String nombre);
     
     /**
-     *  Esta operación permite saber si un nombre ya fue ingresado a la tabla. 
+     *  Esta operaciï¿½n permite saber si un nombre ya fue ingresado a la tabla. 
      *  @precond La tabla debe estar inicializada.
      * @param codigo
      * @return Si el elemento existe en la tabla o no.
@@ -23,28 +23,28 @@ public interface TablaTDA {
     boolean pertenece(int codigo);
     
     /**
-     * Indica cuál es el código de un nombre suministrado (no se elimina).
+     * Indica cuï¿½l es el cï¿½digo de un nombre suministrado (no se elimina).
      * @param nombre El nombre a buscar
-     * @return El código del nombre a buscar
+     * @return El cï¿½digo del nombre a buscar
      */
     int codigo(String nombre);
     
     /**
      * Devuelve los elementos en una estructura cola, donde cada elemento de la cola corresponde a la
-     * concatenación del código y el nombre separado por el carácter “;”.
+     * concatenaciï¿½n del cï¿½digo y el nombre separado por el carï¿½cter ï¿½;ï¿½.
      * @precond La tabla debe estar inicializada
-     * @return Cola con los elementos de la tabla, con su código y nombre separado por ";"
+     * @return Cola con los elementos de la tabla, con su cï¿½digo y nombre separado por ";"
      */
-    ColaTDA valores();
+    ColaCadenaTDA valores();
     
     /**
-     * Ordena los elementos de la tabla, alfabéticamente por los nombres
+     * Ordena los elementos de la tabla, alfabï¿½ticamente por los nombres
      * @precond  La tabla debe estar inicializada.
      */
     void ordenarNombres();
     
     /**
-     * Ordena los elementos de la tabla por los códigos, en forma ascendente.
+     * Ordena los elementos de la tabla por los cï¿½digos, en forma ascendente.
      * @precond  La tabla debe estar inicializada.
      */
     void ordenarCodigos();
@@ -52,7 +52,7 @@ public interface TablaTDA {
     /**
      * Informa si la tabla no tiene elementos.
      * @precond La tabla debe estar inicializada
-     * @return Si la tabla está vacía
+     * @return Si la tabla estï¿½ vacï¿½a
      */
     boolean estaVacia();
 }
