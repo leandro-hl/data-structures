@@ -33,47 +33,4 @@ public class ColaCircular implements ColaTDA {
         return vector[sacar];
     }
 
-    @Override
-    public void imprimirValores() {
-        ColaTDA aux = new ColaCircular();
-        aux.inicializarCola();
-
-        while (!this.colaVacia()){
-            System.out.println(this.primero());
-            aux.acolar(this.primero());
-            this.desacolar();
-        }
-
-        while (!aux.colaVacia()){
-            this.acolar(aux.primero());
-            aux.desacolar();
-        }
-    }
-
-    @Override
-    public void imprimirComparativa(ColaTDA comparar) {
-        ColaTDA auxMisValores = new ColaCircular();
-        ColaTDA auxSusValores = new ColaCircular();
-        auxMisValores.inicializarCola();
-        auxSusValores.inicializarCola();
-
-        System.out.println("[ Cola 1, Cola 2 ]");
-        while (!this.colaVacia()){
-            System.out.println("[ " + this.primero() + ", " + comparar.primero() + " ]");
-            auxMisValores.acolar(this.primero());
-            auxSusValores.acolar(comparar.primero());
-            this.desacolar();
-            comparar.desacolar();
-        }
-
-        while (!auxMisValores.colaVacia()){
-            this.acolar(auxMisValores.primero());
-            auxMisValores.desacolar();
-        }
-
-        while (!auxSusValores.colaVacia()){
-            comparar.acolar(auxSusValores.primero());
-            auxSusValores.desacolar();
-        }
-    }
 }

@@ -45,24 +45,4 @@ public class PilaDinamicaTopeInicio implements PilaTDA {
         this.inicio = null;
     }
 
-    @Override
-    public void imprimirValores() {
-        PilaTDA aux = new PilaDinamicaTopeInicio();
-
-        while (!this.pilaVacia()) {
-            System.out.println(this.tope());
-            aux.apilar(this.tope());
-            this.desapilar();
-        }
-
-        while (!aux.pilaVacia()) {
-            this.apilar(aux.tope());
-            aux.desapilar();
-        }
-    }
-
-    @Override
-    public void imprimirComparativa(PilaTDA comparar) {
-
-    }
 }

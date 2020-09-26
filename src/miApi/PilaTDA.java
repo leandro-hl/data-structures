@@ -1,8 +1,6 @@
 package miApi;
 
-import tdas.helpers.ImprimirTDA;
-
-public interface PilaTDA extends ImprimirTDA<PilaTDA> {
+public interface PilaTDA {
     void apilar(int x);
 
     void desapilar();

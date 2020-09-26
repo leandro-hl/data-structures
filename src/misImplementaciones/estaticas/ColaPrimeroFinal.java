@@ -36,13 +36,4 @@ public class ColaPrimeroFinal implements ColaTDA {
         return vector[poner];
     }
 
-    @Override
-    public void imprimirValores() {
-
-    }
-
-    @Override
-    public void imprimirComparativa(ColaTDA comparar) {
-
-    }
 }

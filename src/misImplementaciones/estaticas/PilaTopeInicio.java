@@ -41,13 +41,4 @@ public class PilaTopeInicio implements PilaTDA {
         posicion = 0;
     }
 
-    @Override
-    public void imprimirValores() {
-
-    }
-
-    @Override
-    public void imprimirComparativa(PilaTDA comparar) {
-
-    }
 }

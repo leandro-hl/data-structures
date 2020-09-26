@@ -49,14 +49,6 @@ public class ColaPrioridadAscendentePrimeroFinal implements ColaPrioridadTDA {
         return vector[poner].prioridad;
     }
 
-    public void imprimirValores() {
-
-    }
-
-    public void imprimirComparativa(ColaTDA comparar) {
-
-    }
-
     class Elemento {
         public Elemento(int valor, int prioridad) {
             this.valor = valor;

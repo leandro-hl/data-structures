@@ -1,8 +1,7 @@
 package miApi;
 
-import tdas.helpers.ImprimirTDA;
-
 public interface ColaTDA {
+	
     void inicializarCola();
 
     /**

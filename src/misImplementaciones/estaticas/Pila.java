@@ -34,25 +34,4 @@ public class Pila implements PilaTDA {
         posicion = 0;
     }
 
-    @Override
-    public void imprimirValores() {
-        PilaTDA aux = new Pila();
-        aux.inicializarPila();
-
-        while (!this.pilaVacia()) {
-            System.out.println(this.tope());
-            aux.apilar(this.tope());
-            this.desapilar();
-        }
-
-        while (!aux.pilaVacia()) {
-            this.apilar(aux.tope());
-            aux.desapilar();
-        }
-    }
-
-    @Override
-    public void imprimirComparativa(PilaTDA comparar) {
-
-    }
 }
