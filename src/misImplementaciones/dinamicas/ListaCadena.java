@@ -113,8 +113,8 @@ public class ListaCadena implements ListaCadenaTDA {
     }
 
     @Override
-    public ColaCadenaTDA valores() {
-        ColaCadenaTDA valores; //Falta implementación
+    public ColaCadena valores() {
+        ColaCadena valores; //Falta implementación
         valores.inicializarCola();
 
         Nodo actual = inicio;

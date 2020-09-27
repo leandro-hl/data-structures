@@ -4,7 +4,11 @@ package miApi;
  * Estructura de datos necesaria para Tabla
  */
 public interface ColaCadenaTDA {
-    void inicializarCola();
+    
+	/**
+	 * @precond inicializa la cola
+	 */
+	void inicializarCola();
 
     /**
      * @precond La estructura debe estar inicializada.

@@ -1,7 +1,7 @@
 package misImplementaciones.estaticas;
 
 import miApi.ColaPrioridadTDA;
-import miApi.ColaTDA;
+
 
 public class ColaPrioridadAscendentePrimeroFinal implements ColaPrioridadTDA {
     public Elemento[] vector;
