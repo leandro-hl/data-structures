@@ -1,7 +1,7 @@
 package misImplementaciones.estaticas;
 
 public class ColaCadena implements miApi.ColaCadenaTDA {
-	
+/////// IMPLEMENTACION DE COLA ALMACENAMIENTO CIRCULAR
 	private String [] vector;
 	private int poner, sacar;
 	
