@@ -19,21 +19,19 @@ public class Conjunto implements ConjuntoTDA {
 
     @Override
     public void agregar(int x) {
-        if (!pertenece(x)) {
-            vector[cantidadElementos] = x;
-            cantidadElementos++;
-        }
+    	vector[cantidadElementos] = x;
+        cantidadElementos++;
+        
     }
 
     @Override
     public void sacar(int x) {
         int ultimo = cantidadElementos - 1;
         int indice = ultimo;
-
+        
         while (indice >= 0 && vector[indice] != x) {
             indice--;
         }
-
         //utilizamos la posicion del elemento a eliminar para
         //guardar el elemento en la ultima posicion del conjunto.
         //asi, no queda un espacio vacio en medio del conjunto
@@ -53,15 +51,10 @@ public class Conjunto implements ConjuntoTDA {
 
     @Override
     public boolean pertenece(int x) {
-        boolean pertenece = false;
-
-        for (int i = 0; i < cantidadElementos; i++) {
-            if (vector[i] == x) {
-                pertenece = true;
-                break;
-            }
-        }
-
-        return pertenece;
-    }
+		int i = 0;
+		while(i<cantidadElementos && vector[i]!=x) {
+			i++;
+		}
+		return (i<cantidadElementos);
+	}
 }

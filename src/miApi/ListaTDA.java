@@ -1,6 +1,7 @@
 package miApi;
 
 public interface ListaTDA {
+	
     void agregarInicio(int valor);
 
     void agregarFinal(int valor);
@@ -18,4 +19,5 @@ public interface ListaTDA {
     ColaTDA valores();
 
     boolean listaVacia();
+    
 }
