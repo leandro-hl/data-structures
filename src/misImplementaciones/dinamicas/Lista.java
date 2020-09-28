@@ -15,13 +15,25 @@ public class Lista implements ListaTDA {
         }
     }
 
+    
+    // Implementacion dinamica
+    
     Nodo inicio;
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
     @Override
     public void inicializarLista() {
         inicio = null;
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public void agregarInicio(int valor) {
         Nodo nuevoNodo = new Nodo(valor);
@@ -31,6 +43,11 @@ public class Lista implements ListaTDA {
         inicio = nuevoNodo;
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public void agregarFinal(int valor) {
         if (listaVacia()) {
@@ -48,12 +65,22 @@ public class Lista implements ListaTDA {
         actual.siguiente = nuevoNodo;
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public void eliminarInicio() {
         if (!listaVacia()) {
             inicio = inicio.siguiente;
         }
     }
+    
+    /**
+     * Orden de complejidad: 1
+     */
+    
 
     @Override
     public void eliminarFinal() {
@@ -77,6 +104,11 @@ public class Lista implements ListaTDA {
         anterior.siguiente = null;
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public void eliminar(int valor) {
         if (listaVacia()) {
@@ -100,6 +132,11 @@ public class Lista implements ListaTDA {
             anterior.siguiente = actual.siguiente;
         }
     }
+    
+    /**
+     * Orden de complejidad: 1
+     */
+    
 
     @Override
     public boolean existe(int valor) {
@@ -111,6 +148,11 @@ public class Lista implements ListaTDA {
 
         return actual == null;
     }
+    
+    /**
+     * Orden de complejidad: 1
+     */
+    
 
     @Override
     public ColaTDA valores() {
@@ -127,6 +169,11 @@ public class Lista implements ListaTDA {
         return valores;
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public boolean listaVacia() {
         return inicio == null;

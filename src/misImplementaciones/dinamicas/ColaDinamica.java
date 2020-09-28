@@ -12,11 +12,20 @@ public class ColaDinamica implements ColaTDA {
 	
 	private Node inicio, fin;
 	
+	//Implementacion dinamica
+	
+	/**
+	 * Orden de complejidad: 1
+	 */
 	
 	@Override
 	public void inicializarCola() {
 		inicio = fin = null;
 	}
+	
+	/**
+	 * Orden de complejidad: 1
+	 */
 
 	@Override
 	public void acolar(int x) {
@@ -32,6 +41,10 @@ public class ColaDinamica implements ColaTDA {
 		}
 	}
 
+	/**
+	 * Orden de complejidad: 1
+	 */
+	
 	@Override
 	public void desacolar() {
 		inicio = inicio.sig;
@@ -39,12 +52,20 @@ public class ColaDinamica implements ColaTDA {
 			fin = null;
 		}
 	}
+	
+	/**
+	 * Orden de complejidad: 1
+	 */
 
 	@Override
 	public boolean colaVacia() {
 		
 		return inicio == null;
 	}
+	
+	/**
+	 * Orden de complejidad: 1
+	 */
 
 	@Override
 	public int primero() {

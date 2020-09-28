@@ -4,6 +4,8 @@ import miApi.ColaTDA;
 import miApi.ListaCadenaTDA;
 import misImplementaciones.estaticas.ColaCircular;
 
+//Implementacion dimanica
+
 public class ListaCadena implements ListaCadenaTDA {
     class Nodo {
         String valor;
@@ -17,11 +19,21 @@ public class ListaCadena implements ListaCadenaTDA {
 
     Nodo inicio;
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public void inicializarLista() {
         inicio = null;
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public void agregarInicio(String valor) {
         Nodo nuevoNodo = new Nodo(valor);
@@ -30,6 +42,11 @@ public class ListaCadena implements ListaCadenaTDA {
 
         inicio = nuevoNodo;
     }
+    
+    /**
+     * Orden de complejidad: 1
+     */
+    
 
     @Override
     public void agregarFinal(String valor) {
@@ -48,12 +65,22 @@ public class ListaCadena implements ListaCadenaTDA {
         actual.siguiente = nuevoNodo;
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public void eliminarInicio() {
         if (!listaVacia()) {
             inicio = inicio.siguiente;
         }
     }
+    
+    /**
+     * Orden de complejidad: 1
+     */
+    
 
     @Override
     public void eliminarFinal() {
@@ -76,6 +103,11 @@ public class ListaCadena implements ListaCadenaTDA {
 
         anterior.siguiente = null;
     }
+    
+    /**
+     * Orden de complejidad: 1
+     */
+    
 
     @Override
     public void eliminar(String valor) {
@@ -101,6 +133,11 @@ public class ListaCadena implements ListaCadenaTDA {
         }
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public boolean existe(String valor) {
         Nodo actual = inicio;
@@ -111,6 +148,11 @@ public class ListaCadena implements ListaCadenaTDA {
 
         return actual == null;
     }
+    
+    /**
+     * Orden de complejidad: 1
+     */
+    
 
     @Override
     public ColaCadena valores() {
@@ -127,6 +169,11 @@ public class ListaCadena implements ListaCadenaTDA {
         return valores;
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public boolean listaVacia() {
         return inicio == null;

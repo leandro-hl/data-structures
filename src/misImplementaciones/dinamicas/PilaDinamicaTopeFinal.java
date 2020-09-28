@@ -2,6 +2,8 @@ package misImplementaciones.dinamicas;
 
 import miApi.PilaTDA;
 
+//Implementacion dinamica
+
 public class PilaDinamicaTopeFinal implements PilaTDA {
     class Nodo {
         int valor;
@@ -15,6 +17,11 @@ public class PilaDinamicaTopeFinal implements PilaTDA {
     Nodo inicio;
     Nodo fin;
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public void apilar(int x) {
         Nodo nuevo = new Nodo(x);
@@ -34,6 +41,11 @@ public class PilaDinamicaTopeFinal implements PilaTDA {
         fin = nuevo;
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public void desapilar() {
         if (pilaVacia()) {
@@ -57,15 +69,30 @@ public class PilaDinamicaTopeFinal implements PilaTDA {
         fin = anterior;
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public int tope() {
         return fin.valor;
     }
 
+    /**
+     * Orden de complejidad: 1
+     */
+    
+    
     @Override
     public boolean pilaVacia() {
         return inicio == null;
     }
+    
+    /**
+     * Orden de complejidad: 1
+     */
+    
 
     @Override
     public void inicializarPila() {
